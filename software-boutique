@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+WELCOME=$(which ubuntu-mate-welcome)
+if [[ ${WELCOME} == /snap* ]]; then
+  snap run ubuntu-mate-welcome --boutique "$@"
+else
+  echo "Software Boutique is not installed. Please run 'snap install ubuntu-mate-welcome --classic'."
+fi

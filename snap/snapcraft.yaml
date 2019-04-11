@@ -1,0 +1,17 @@
+name: software-boutique
+version: git
+summary: Launcher for the Ubuntu MATE Software Boutique.
+description: |
+  Launcher for the Ubuntu MATE Software Boutique.
+
+grade: stable
+confinement: classic
+
+parts:
+  software-boutique:
+    plugin: dump
+    source: .
+
+apps:
+  software-boutique:
+    command: software-boutique
