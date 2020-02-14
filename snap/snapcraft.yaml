@@ -5,6 +5,7 @@ description: |
   Launcher for the Ubuntu MATE Software Boutique.
 
 grade: stable
+base: core18
 confinement: classic
 
 parts:
